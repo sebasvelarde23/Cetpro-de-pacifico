@@ -1,0 +1,456 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: rgb(223, 240, 223);
+    }
+    /* Estilos para el header */
+    
+    header {
+        background: linear-gradient(rgba(205, 207, 84, 0.5), rgba(62, 195, 212, 0.5)), #b3e739;
+        color: #fff;
+        padding: 10px;
+        /* Ajusta el relleno */
+        text-align: center;
+        font-size: 30px;
+        /* Tamaño de fuente reducido */
+        overflow: hidden;
+        /* Para evitar el desbordamiento del contenido */
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    header h3 {
+        margin-top: 30px;
+        color: #f0c653;
+    }
+    
+    header:hover {
+        transform: scale(1);
+    }
+    /* Estilos para la contenedor de navegación */
+    
+    .nav-container {
+        max-width: 100%;
+    }
+    /* Estilos para la navegación */
+    
+    nav {
+        background: linear-gradient(rgba(247, 230, 79, 0.5), rgba(107, 114, 11, 0.5)), #1b6c7a;
+        text-align: center;
+        padding: 5px;
+        /* Ajusta el relleno */
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: block;
+        /* Cambia a bloques en lugar de línea en móviles */
+        margin-bottom: 10px;
+        /* Espacio entre elementos de navegación */
+        font-size: 18px;
+        margin: 15px;
+        padding: 0;
+        /* Tamaño de fuente reducido */
+    }
+    
+    nav li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 15px;
+        /* Ajusta el relleno */
+        border: 2px solid #e0a8a8;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    nav li a:hover {
+        background-color: rgb(37, 65, 192);
+    }
+    /* Estilos para la lista de carreras */
+    
+    .career-list {
+        list-style: none;
+        padding: 0;
+    }
+    /* Estilos para cada módulo */
+    
+    .card {
+        background-color: #65bbdd;
+        border-radius: 6px;
+        padding: 10px;
+        margin-bottom: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        color: yellow;
+    }
+    
+    .card:hover {
+        background-color: #D4A373;
+        /* Tono complementario */
+        color: rgb(0, 0, 0);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Sombra al hacer hover */
+    }
+    
+    p {
+        font-size: 20px;
+        /* Tamaño de fuente deseado */
+        /* Estilos para los íconos */
+    }
+    
+    .card i {
+        margin-right: 8px;
+    }
+    
+    .image-container {
+        width: 70%;
+        /* Ancho del contenedor */
+        margin: 0 auto;
+        /* Centrar el contenedor */
+        padding: 20px;
+        /* Espaciado interno */
+        border: 1px solid #ccc;
+        /* Borde alrededor del contenedor */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        overflow: hidden;
+        /* Para limpiar el float */
+    }
+    
+    .module-image {
+        float: right;
+        /* Posicionamiento a la derecha */
+        width: 30%;
+        /* Ancho de la imagen */
+        margin-right: 20px;
+        /* Margen derecho */
+        margin-bottom: 20px;
+        /* Margen inferior */
+        border: 2px solid #ccc;
+        /* Borde de la imagen */
+        border-radius: 8px;
+        /* Bordes redondeados */
+        padding: 5px;
+        /* Espaciado interno entre el borde y la imagen */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Sombra alrededor de la imagen */
+    }
+    
+    .module {
+        border-left: 4px solid #3498db;
+        width: 50%;
+        padding: 20px;
+        word-spacing: normal;
+        margin: 10px 10px 10px;
+        /* Color común para todos los módulos */
+    }
+    
+    @media screen and (max-width: 576px) {
+        .image-container {
+            width: 95%;
+            padding: 10px;
+        }
+        .module-image {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        .module {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    }
+    /* Para dispositivos de 577px a 768px (teléfonos y tabletas en modo retrato) */
+    
+    @media screen and (min-width: 577px) and (max-width: 768px) {
+        .image-container {
+            width: 90%;
+            padding: 15px;
+        }
+    }
+    /* Para dispositivos de 769px a 992px (tabletas y pantallas más grandes) */
+    
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        .image-container {
+            width: 80%;
+            padding: 20px;
+        }
+    }
+    
+    .carrer-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .carrer-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    /* Estilos para el contenedor principal */
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1px solid #333;
+        /* Borde más delgado */
+        padding: 5px;
+    }
+    /* Estilos para las cartas (secciones) */
+    
+    .carta {
+        border: 1px solid #333;
+        /* Borde más delgado */
+        border-radius: 10px;
+        margin: 10px 10px;
+        /* Espacio entre cartas */
+        padding: 5px;
+    }
+    /* Estilos para los títulos de sección */
+    
+    .carta h3 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    /* Estilos para la lista de características */
+    
+    ul.carrer-lis {
+        list-style-type: none;
+        padding-left: 20px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    /* Estilos para los elementos de la lista de características */
+    
+    ul.carrer-lis li {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+    
+    .footer {
+        background-color: #0a0a0a;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    }
+    /* Estilos para el logo y la dirección */
+    
+    .footer__logo {
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+        color: #a89c88;
+    }
+    
+    .footer__addr {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    
+    .footer__title {
+        font-size: 35px;
+        margin: 15px 0;
+        font-weight: bold;
+        color: #ff9900;
+        text-align: center;
+    }
+    
+    .whatsapp-icon {
+        font-size: 35px;
+        /* Tamaño del ícono */
+        color: #25D366;
+        /* Color del ícono de WhatsApp */
+    }
+    
+    .facebook-icon {
+        font-size: 35px;
+        /* Tamaño del ícono */
+        color: #3b5998;
+        /* Color del ícono de Facebook */
+    }
+    
+    .footer__social a:hover {
+        background-color: #b15a45;
+        cursor: pointer;
+    }
+    
+    .button-link {
+        color: #ec954e;
+        text-decoration: none;
+        font-size: 50px;
+        border: 2px solid #ec954e;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button-link:hover {
+        background-color: #ec954e;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .footer {
+        background-color: #0a0a0a;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    }
+    /* Estilos para el logo y la dirección */
+    
+    .footer__logo {
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+        color: #a89c88;
+    }
+    
+    .footer__addr {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    
+    .footer__title {
+        font-size: 35px;
+        margin: 15px 0;
+        font-weight: bold;
+        color: #ff9900;
+        text-align: center;
+    }
+    
+    .footer__addr a {
+        color: #ec954e;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    /* Estilos para redes sociales */
+    
+    .footer__social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /* Establece el espacio horizontal entre los enlaces a cero para que estén lado a lado */
+    
+    .footer__social a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(14, 14, 15);
+        color: rgb(229, 231, 225);
+        padding: 10px 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 5px;
+    }
+    
+    .footer__social a:hover {
+        background-color: #b15a45;
+        cursor: pointer;
+    }
+    
+    .button-link {
+        color: #ec954e;
+        text-decoration: none;
+        font-size: 50px;
+        border: 2px solid #ec954e;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button-link:hover {
+        background-color: #ec954e;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 720px) {
+        .footer__logo,
+        .footer__addr,
+        .footer__title,
+        .footer__addr a {
+            font-size: 18px;
+        }
+        .footer-container {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .footer__social a {
+            padding: 10px 15px;
+            flex-direction: column;
+        }
+        .footer__logo h1 {
+            font-size: 25px;
+        }
+        .footer__title {
+            font-size: 19px;
+        }
+        .footer__addr {
+            font-size: 14px;
+            margin-right: 0;
+        }
+    }
+    /* Consulta de medios para 320px */
+    
+    @media screen and (max-width: 320px) {
+        .footer__logo h1,
+        .footer__addr,
+        .footer__title,
+        .button-link,
+        .footer__social a {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .footer__social a {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    }

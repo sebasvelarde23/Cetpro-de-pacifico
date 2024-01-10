@@ -1,0 +1,625 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    /* Estilos para el header */
+                    
+                    body {
+                        background-color: green;
+                    }
+                    
+                    header {
+                        background: linear-gradient(rgba(255, 99, 71, 0.5), rgba(255, 69, 0, 0.5)), #ffd700;
+                        color: #fff;
+                        padding: 10px;
+                        text-align: center;
+                        font-size: 30px;
+                        overflow: hidden;
+                        font-family: cursive;
+                        max-width: 100%;
+                    }
+                    
+                    header h1 {
+                        margin: 5px 0;
+                        /* Ajusta el margen según tus preferencias */
+                        font-size: 70px;
+                        /* Cambia el tamaño de la fuente, ajusta según tus necesidades */
+                    }
+                    
+                    header h3 {
+                        margin-top: -30px;
+                    }
+                    
+                    header:hover {
+                        transform: scale(1);
+                    }
+                    /* Estilos para la contenedor de navegación */
+                    
+                    .nav-container {
+                        max-width: 100%;
+                    }
+                    /* Estilos para la navegación */
+                    
+                    nav {
+                        background: linear-gradient(rgba(255, 182, 193, 0.5), rgba(255, 105, 180, 0.5)), #ffd700;
+                        text-align: center;
+                        padding: 5px;
+                    }
+                    
+                    nav ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    nav li {
+                        display: block;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                    }
+                    
+                    nav li a {
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 5px 10px;
+                        border: 2px solid #e0a8a8;
+                        border-radius: 5px;
+                        transition: background-color 0.3s;
+                        font-family: cursive;
+                    }
+                    
+                    nav li a:hover {
+                        background-color: rgb(255, 69, 0);
+                    }
+                    
+                    @media only screen and (max-width: 320px) and (max-height: 533px) {
+                        header {
+                            font-size: 14px;
+                            max-width: 100%;
+                        }
+                        th,
+                        td {
+                            padding: 5px;
+                            font-size: 14px;
+                        }
+                        .result-row td {
+                            padding: 5px;
+                            font-size: 16px;
+                        }
+                    }
+                    /* Estilos para cada módulo */
+                    /* Estilos base de la tabla */
+                    
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 20px 0;
+                        font-size: 16px;
+                        font-family: 'Times New Roman', Times, serif;
+                        border: 2px solid #795548;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        text-align: center;
+                    }
+                    
+                    th {
+                        background-color: #4e342e;
+                        color: #fff;
+                        border: 2px solid #8d6e63;
+                        padding: 12px;
+                        text-align: center;
+                        font-style: italic;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    
+                    td {
+                        border: 2px solid #8d6e63;
+                        padding: 12px;
+                        text-align: left;
+                        font-style: italic;
+                    }
+                    /* Estilos alternados para filas */
+                    
+                    tr:nth-child(odd) {
+                        background-color: #efebe9;
+                    }
+                    
+                    tr:nth-child(even) {
+                        background-color: #d7ccc8;
+                    }
+                    
+                    .result-row {
+                        background-color: #4e342e;
+                        font-weight: bold;
+                        text-align: center;
+                        color: #fff;
+                        font-style: italic;
+                    }
+                    
+                    .result-row td {
+                        border: none;
+                        padding: 10px;
+                        color: #4e342e;
+                        font-family: cursive;
+                        font-size: 25px;
+                    }
+                    
+                    @media only screen and (max-width: 360px) and (max-height: 640px) {
+                        table {
+                            font-size: 12px;
+                        }
+                        th,
+                        td {
+                            padding: 1px;
+                            font-size: 12px;
+                        }
+                        .result-row td {
+                            padding: 5px;
+                            font-size: 16px;
+                        }
+                    }
+                    /* Media queries para dispositivos 360 x 640 */
+                    
+                    header {
+                        font-size: 50px;
+                    }
+                    
+                    header:hover {
+                        transform: scale(1.05)
+                    }
+                    
+                    .tarjeta {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        transition: transform 0.2s ease-in-out, background-color 0.2s;
+                        cursor: pointer;
+                        margin: 10px;
+                        width: 200px;
+                        height: 200px;
+                        line-height: 1.4;
+                        border-radius: 10px;
+                        overflow: hidden;
+                    }
+                    
+                     :root {
+                        --tarjeta-width-small: 150px;
+                        --tarjeta-height-small: 95px;
+                        --tarjeta-padding-small: 10px;
+                        --tarjeta-font-size-small: 15px;
+                        --tarjeta-width-medium: 150px;
+                        --tarjeta-height-medium: 150px;
+                    }
+                    /* Estilos generales para pantallas más pequeñas y medianas */
+                    
+                    @media (max-width: 640px) {
+                        .tarjeta {
+                            width: var(--tarjeta-width-medium);
+                            height: var(--tarjeta-height-medium);
+                        }
+                    }
+                    /* Estilos para pantallas pequeñas, como el Galaxy Z Fold */
+                    
+                    @media screen and (max-width: 300px) and (max-height: 812px) {
+                        .tarjeta {
+                            width: var(--tarjeta-width-small);
+                            height: var(--tarjeta-height-small);
+                            margin-top: 5px;
+                            padding: var(--tarjeta-padding-small);
+                            text-align: center;
+                            font-size: var(--tarjeta-font-size-small);
+                            display: flex;
+                            align-items: center;
+                        }
+                        /* Establece el contenedor para que use flexbox */
+                        .carrer-list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 412px) and (max-height: 915px) {
+                        .tarjeta {
+                            width: var(--tarjeta-width-small);
+                            height: var(--tarjeta-height-small);
+                            margin-top: 5px;
+                            padding: var(--tarjeta-padding-small);
+                            text-align: center;
+                            font-size: var(--tarjeta-font-size-small);
+                            display: flex;
+                            align-items: center;
+                        }
+                        /* Establece el contenedor para que use flexbox */
+                        .carrer-list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 600px) and (max-height: 1024px) {
+                        .tarjeta {
+                            width: var(--tarjeta-width-small);
+                            height: var(--tarjeta-height-small);
+                            margin-top: 5px;
+                            padding: var(--tarjeta-padding-small);
+                            text-align: center;
+                            font-size: var(--tarjeta-font-size-small);
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                    /* Establece el contenedor para que use flexbox */
+                    
+                    .carrer-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                    }
+                    
+                    .carrer-list {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        width: 100%;
+                    }
+                    /* Estilos para el contenedor principal */
+                    
+                    .container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        border-radius: 5px;
+                        border: 1px solid #333;
+                        /* Borde más delgado */
+                        padding: 5px;
+                    }
+                    /* Estilos para las cartas (secciones) */
+                    
+                    .carta {
+                        border: 1px solid #333;
+                        /* Borde más delgado */
+                        border-radius: 10px;
+                        margin: 10px 10px;
+                        /* Espacio entre cartas */
+                        padding: 5px;
+                    }
+                    /* Estilos para los títulos de sección */
+                    
+                    .carta h3 {
+                        font-size: 28px;
+                        color: #333;
+                        margin-bottom: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    /* Estilos para la lista de características */
+                    
+                    ul.carrer-lis {
+                        list-style-type: none;
+                        padding-left: 20px;
+                        text-align: left;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    /* Estilos para los elementos de la lista de características */
+                    
+                    ul.carrer-lis li {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                        color: #555;
+                    }
+                    /* Estilos personalizados */
+                    
+                    .containe {
+                        /* Estilos para el contenedor principal */
+                        width: 100%;
+                        /* Ancho completo del contenedor */
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        border-radius: 5px;
+                        border: 1px solid #333;
+                    }
+                    
+                    .galeria {
+                        width: 70%;
+                        margin: 0;
+                        list-style: none;
+                        padding: 30px;
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        /* background-image: url(imagenes/comida.jpg);
+                    /* Ajustes para que el fondo ocupe todo el contenedor y se vea más grande */
+                        background-image: url(imagenes/images.jpeg);
+                        background-position: center;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        opacity: 0.9;
+                    }
+                    
+                    .galeria img {
+                        margin: 5px;
+                        width: 300px;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease-in-out;
+                    }
+                    
+                    .galeria-row {
+                        display: flex;
+                        justify-content: space-around;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .galeria-row li {
+                        flex: 1;
+                        margin: 0;
+                    }
+                    
+                    img:hover {
+                        transform: scale(1.05);
+                        /* Aumenta el tamaño al pasar el cursor */
+                    }
+                    
+                    @media screen and (max-width: 768px) {
+                        .galeria img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 8px;
+                            /* Bordes redondeados */
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                            /* Sombra suave */
+                            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                            margin: 0 auto;
+                            /* Centrar horizontalmente */
+                            display: block;
+                            /* Convertir en bloque para aplicar margen automáticamente */
+                        }
+                        .galeria img:hover {
+                            transform: scale(1.05);
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                            background-color: #f0f0f0;
+                            /* Fondo más claro al pasar el mouse */
+                        }
+                    }
+                    /* Media query para 576px */
+                    
+                    @media screen and (max-width: 576px) {
+                        .galeria img {
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 6px;
+                            /* Bordes redondeados */
+                            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                            /* Sombra suave */
+                            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                            margin: 0 auto;
+                            /* Centrar horizontalmente */
+                            display: block;
+                            padding: 15px;
+                            /* Convertir en bloque para aplicar margen automáticamente */
+                        }
+                        .galeria img:hover {
+                            transform: scale(1.05);
+                            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                            background-color: #f0f0f0;
+                            /* Fondo más claro al pasar el mouse */
+                        }
+                    }
+                    
+                    .footer {
+                        background-color: #0a0a0a;
+                        color: #fff;
+                        padding: 20px 0;
+                        text-align: center;
+                    }
+                    
+                    .footer-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        /* Permite que los elementos se envuelvan en pantallas pequeñas */
+                    }
+                    /* Estilos para el logo y la dirección */
+                    
+                    .footer__logo {
+                        font-size: 40px;
+                        margin: 0;
+                        font-weight: bold;
+                        color: #a89c88;
+                    }
+                    
+                    .footer__addr {
+                        font-size: 40px;
+                        margin-right: 20px;
+                    }
+                    
+                    .footer__title {
+                        font-size: 35px;
+                        margin: 15px 0;
+                        font-weight: bold;
+                        color: #ff9900;
+                        text-align: center;
+                    }
+                    
+                    .whatsapp-icon {
+                        font-size: 35px;
+                        /* Tamaño del ícono */
+                        color: #25D366;
+                        /* Color del ícono de WhatsApp */
+                    }
+                    
+                    .facebook-icon {
+                        font-size: 35px;
+                        /* Tamaño del ícono */
+                        color: #3b5998;
+                        /* Color del ícono de Facebook */
+                    }
+                    
+                    .footer__social a:hover {
+                        background-color: #b15a45;
+                        cursor: pointer;
+                    }
+                    
+                    .button-link {
+                        color: #ec954e;
+                        text-decoration: none;
+                        font-size: 50px;
+                        border: 2px solid #ec954e;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        display: inline-block;
+                        transition: background-color 0.3s ease;
+                    }
+                    
+                    .button-link:hover {
+                        background-color: #ec954e;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                    
+                    .footer {
+                        background-color: #0a0a0a;
+                        color: #fff;
+                        padding: 20px 0;
+                        text-align: center;
+                    }
+                    
+                    .footer-container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        /* Permite que los elementos se envuelvan en pantallas pequeñas */
+                    }
+                    /* Estilos para el logo y la dirección */
+                    
+                    .footer__logo {
+                        font-size: 40px;
+                        margin: 0;
+                        font-weight: bold;
+                        color: #a89c88;
+                    }
+                    
+                    .footer__addr {
+                        font-size: 40px;
+                        margin-right: 20px;
+                    }
+                    
+                    .footer__title {
+                        font-size: 35px;
+                        margin: 15px 0;
+                        font-weight: bold;
+                        color: #ff9900;
+                        text-align: center;
+                    }
+                    
+                    .footer__addr a {
+                        color: #ec954e;
+                        text-decoration: none;
+                        font-size: 30px;
+                    }
+                    /* Estilos para redes sociales */
+                    
+                    .footer__social {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 20px;
+                    }
+                    /* Establece el espacio horizontal entre los enlaces a cero para que estén lado a lado */
+                    
+                    .footer__social a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: rgb(14, 14, 15);
+                        color: rgb(229, 231, 225);
+                        padding: 10px 20px;
+                        text-align: center;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                        margin: 0 5px;
+                    }
+                    
+                    .footer__social a:hover {
+                        background-color: #b15a45;
+                        cursor: pointer;
+                    }
+                    
+                    .button-link {
+                        color: #ec954e;
+                        text-decoration: none;
+                        font-size: 50px;
+                        border: 2px solid #ec954e;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        display: inline-block;
+                        transition: background-color 0.3s ease;
+                    }
+                    
+                    .button-link:hover {
+                        background-color: #ec954e;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                    
+                    @media screen and (max-width: 720px) {
+                        .footer__logo,
+                        .footer__addr,
+                        .footer__title,
+                        .footer__addr a {
+                            font-size: 18px;
+                        }
+                        .footer-container {
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                        .footer__social a {
+                            padding: 10px 15px;
+                            flex-direction: column;
+                        }
+                        .footer__logo h1 {
+                            font-size: 25px;
+                        }
+                        .footer__title {
+                            font-size: 19px;
+                        }
+                        .footer__addr {
+                            font-size: 14px;
+                            margin-right: 0;
+                        }
+                    }
+                    /* Consulta de medios para 320px */
+                    
+                    @media screen and (max-width: 320px) {
+                        .footer__logo h1,
+                        .footer__addr,
+                        .footer__title,
+                        .button-link,
+                        .footer__social a {
+                            font-size: 14px;
+                            text-align: center;
+                            margin-top: 5px;
+                        }
+                        .footer__social a {
+                            background-color: #333;
+                            color: #fff;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                        }
+                    }

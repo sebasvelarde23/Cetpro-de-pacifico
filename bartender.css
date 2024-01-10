@@ -1,0 +1,616 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Estilos para el header */
+    
+    header {
+        background: linear-gradient(rgba(109, 180, 212, 0.5), rgba(235, 177, 206, 0.5)), #d3c369;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        overflow: hidden;
+        font-family: cursive;
+        max-width: 100%;
+    }
+    
+    header h1 {
+        margin: 5px 0;
+        /* Ajusta el margen según tus preferencias */
+        font-size: 70px;
+        /* Cambia el tamaño de la fuente, ajusta según tus necesidades */
+    }
+    
+    header h3 {
+        margin-top: -30px;
+    }
+    
+    .nav-container {
+        max-width: 100%;
+    }
+    /* Estilos para la navegación */
+    
+    nav {
+        background: linear-gradient(rgba(134, 241, 179, 0.5), rgba(238, 140, 95, 0.034)), #6998f0;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    nav li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        border: 2px solid #e0a8a8;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-family: cursive;
+    }
+    
+    nav li a:hover {
+        background-color: rgb(238, 124, 90);
+    }
+    
+    .modulo1,
+    .modulo2,
+    .modulo3,
+    .modulo4,
+    .modulo5,
+    .modulo6,
+    .modulo7,
+    .modulo8,
+    .modulo9,
+    .modulo10 {
+        width: 100px;
+        height: 100px;
+        background-color: #E6E6FA;
+        color: #333;
+        font-size: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        border-radius: 50px 200px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 200px;
+        border-bottom-right-radius: 900px;
+        border-bottom-left-radius: 800px 800px;
+        /* Hacer que los elementos sean círculos */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        font-family: Arial, sans-serif;
+    }
+    
+    .carrer-list li:hover {
+        background-color: #90EE90;
+        /* Color de fondo al pasar el mouse */
+        transform: scale(1.1);
+        /* Aumenta un poco el tamaño al pasar el mouse */
+    }
+    /* Estilos específicos para pantallas pequeñas */
+    
+    @media screen and (max-width: 100px) and (max-height: 653px) {
+        .modulo1,
+        .modulo2,
+        .modulo3,
+        .modulo4,
+        .modulo5,
+        .modulo6,
+        .modulo7,
+        .modulo8,
+        .modulo9,
+        .modulo10 {
+            font-size: 14px;
+            /* Tamaño de fuente reducido aún más */
+            padding: 5px;
+            /* Ajusta el relleno */
+            border-radius: 3px;
+            /* Borde redondeado */
+        }
+    }
+    /* Estilos específicos para pantallas medianas (hasta 360x812) */
+    
+    @media screen and (max-width: 654px) and (max-height: 800px) {
+        .modulo1,
+        .modulo2,
+        .modulo3,
+        .modulo4,
+        .modulo5,
+        .modulo6,
+        .modulo7,
+        .modulo8,
+        .modulo9,
+        .modulo10 {
+            font-size: 14px;
+            /* Tamaño de fuente reducido aún más */
+            padding: 5px;
+            /* Ajusta el relleno */
+            border-radius: 3px;
+            /* Borde redondeado */
+        }
+    }
+    /* Estilos específicos para pantallas más grandes (hasta 375x812) */
+    
+    @media screen and (max-width: 800px) and (max-height: 950px) {
+        .modulo1,
+        .modulo2,
+        .modulo3,
+        .modulo4,
+        .modulo5,
+        .modulo6,
+        .modulo7,
+        .modulo8,
+        .modulo9,
+        .modulo10 {
+            font-size: 14px;
+            /* Tamaño de fuente reducido aún más */
+            padding: 5px;
+            /* Ajusta el relleno */
+            border-radius: 3px;
+            /* Borde redondeado */
+        }
+    }
+    /* Estilo común para todos los módulos */
+    /* Estilos para el contenedor principal */
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1px solid #333;
+        /* Borde más delgado */
+        padding: 5px;
+        /* Añadir un relleno interno para separar el contenido del borde */
+    }
+    /* Estilos para las cartas (secciones) */
+    
+    .carta {
+        border: 1px solid #333;
+        /* Borde más delgado */
+        border-radius: 10px;
+        margin: 10px 0;
+        /* Espacio entre cartas */
+        padding: 5px;
+        /* Añadir un relleno interno para separar el contenido del borde */
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    /* Estilos para las celdas encabezado (th) */
+    
+    th {
+        background-color: #78c7d1;
+        color: #ffffff;
+        border: 1px solid #3f7a7d;
+        padding: 10px;
+        text-align: left;
+    }
+    /* Estilos para las celdas de datos (td) */
+    
+    td {
+        border: 1px solid #78c7d1;
+        padding: 10px;
+        text-align: left;
+    }
+    /* Estilos para las filas impares */
+    
+    tr:nth-child(odd) {
+        background-color: #bdd4e0;
+    }
+    /* Estilos para las filas pares */
+    
+    tr:nth-child(even) {
+        background-color: #a0ced9;
+    }
+    
+    .result-row {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .result-row td {
+        border: none;
+        padding: 10px;
+    }
+    
+     :hover table {
+        border: 2px solid #d33227;
+        /* Cambiar el borde al hacer hover */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        /* Agregar sombra al hacer hover */
+    }
+    
+    td {
+        transition: background-color 0.3s ease;
+        /* Agregar transición de color de fondo */
+    }
+    
+    td:hover {
+        background-color: #25D366;
+        /* Cambiar el color de fondo al hacer hover */
+    }
+    /* Agregar sombra al hacer hover */
+    /* Ajuste de fuente para dispositivos plegables */
+    
+    @media screen and (max-width: 600px) {
+        table,
+        th,
+        td {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+    
+    @media screen and (max-width: 280px) and (max-height: 653px),
+    screen and (max-width: 414px) and (max-height: 716px) {
+        table,
+        th,
+        td {
+            font-size: 14px;
+            text-align: center;
+            padding: 5px;
+        }
+        td {
+            transition: background-color 0.3s ease;
+        }
+        td:hover {
+            background-color: #25D366;
+        }
+    }
+    /* Estilos específicos para dispositivos más pequeños */
+    
+    @media screen and (max-width: 414px) and (max-height: 716px) {
+        table,
+        th,
+        td {
+            font-size: 10px !important;
+            padding: 2px !important;
+        }
+    }
+    
+    .container {
+        background-color: white;
+    }
+    
+    ul.carrer-lis {
+        list-style-type: none;
+        padding-left: 20px;
+        text-align: left;
+        font-family: cursive;
+        background-color: white;
+    }
+    /* Estilos para los elementos de la lista de características */
+    
+    ul.carrer-lis li {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+    /* Estilos generales para el footer */
+    
+    .containe {
+        /* Estilos para el contenedor principal */
+        width: 100%;
+        /* Ancho completo del contenedor */
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        border: 1px solid #333;
+    }
+    
+    .galeria {
+        width: 70%;
+        margin: 0;
+        list-style: none;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* background-image: url(imagenes/comida.jpg);
+/* Ajustes para que el fondo ocupe todo el contenedor y se vea más grande */
+        background-image: url(imagenes/esti5.jpg);
+        background-position: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0.9;
+    }
+    
+    .galeria img {
+        margin: 5px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .galeria-row {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .galeria-row li {
+        flex: 1;
+        margin: 0;
+    }
+    
+    img:hover {
+        transform: scale(1.05);
+        /* Aumenta el tamaño al pasar el cursor */
+    }
+    
+    @media screen and (max-width: 768px) {
+        .galeria img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin: 0 auto;
+            /* Centrar horizontalmente */
+            display: block;
+            /* Convertir en bloque para aplicar margen automáticamente */
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #f0f0f0;
+            /* Fondo más claro al pasar el mouse */
+        }
+    }
+    /* Media query para 576px */
+    
+    @media screen and (max-width: 576px) {
+        .galeria img {
+            width: 150px;
+            height: 150px;
+            border-radius: 6px;
+            /* Bordes redondeados */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            /* Sombra suave */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin: 0 auto;
+            /* Centrar horizontalmente */
+            display: block;
+            padding: 15px;
+            /* Convertir en bloque para aplicar margen automáticamente */
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            background-color: #f0f0f0;
+            /* Fondo más claro al pasar el mouse */
+        }
+    }
+    
+    .footer {
+        background-color: #0a0a0a;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    }
+    /* Estilos para el logo y la dirección */
+    
+    .footer__logo {
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+        color: #a89c88;
+    }
+    
+    .footer__addr {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    
+    .footer__title {
+        font-size: 35px;
+        margin: 15px 0;
+        font-weight: bold;
+        color: #ff9900;
+        text-align: center;
+    }
+    
+    .whatsapp-icon {
+        font-size: 35px;
+        /* Tamaño del ícono */
+        color: #25D366;
+        /* Color del ícono de WhatsApp */
+    }
+    
+    .facebook-icon {
+        font-size: 35px;
+        /* Tamaño del ícono */
+        color: #3b5998;
+        /* Color del ícono de Facebook */
+    }
+    
+    .footer__social a:hover {
+        background-color: #b15a45;
+        cursor: pointer;
+    }
+    
+    .button-link {
+        color: #ec954e;
+        text-decoration: none;
+        font-size: 50px;
+        border: 2px solid #ec954e;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button-link:hover {
+        background-color: #ec954e;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .footer {
+        background-color: #0a0a0a;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    }
+    /* Estilos para el logo y la dirección */
+    
+    .footer__logo {
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+        color: #a89c88;
+    }
+    
+    .footer__addr {
+        font-size: 40px;
+        margin-right: 20px;
+    }
+    
+    .footer__title {
+        font-size: 35px;
+        margin: 15px 0;
+        font-weight: bold;
+        color: #ff9900;
+        text-align: center;
+    }
+    
+    .footer__addr a {
+        color: #ec954e;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    /* Estilos para redes sociales */
+    
+    .footer__social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /* Establece el espacio horizontal entre los enlaces a cero para que estén lado a lado */
+    
+    .footer__social a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: rgb(14, 14, 15);
+        color: rgb(229, 231, 225);
+        padding: 10px 20px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 0 5px;
+    }
+    
+    .footer__social a:hover {
+        background-color: #b15a45;
+        cursor: pointer;
+    }
+    
+    .button-link {
+        color: #ec954e;
+        text-decoration: none;
+        font-size: 50px;
+        border: 2px solid #ec954e;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+    
+    .button-link:hover {
+        background-color: #ec954e;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 720px) {
+        .footer__logo,
+        .footer__addr,
+        .footer__title,
+        .footer__addr a {
+            font-size: 18px;
+        }
+        .footer-container {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .footer__social a {
+            padding: 10px 15px;
+            flex-direction: column;
+        }
+        .footer__logo h1 {
+            font-size: 25px;
+        }
+        .footer__title {
+            font-size: 19px;
+        }
+        .footer__addr {
+            font-size: 14px;
+            margin-right: 0;
+        }
+    }
+    /* Consulta de medios para 320px */
+    
+    @media screen and (max-width: 320px) {
+        .footer__logo h1,
+        .footer__addr,
+        .footer__title,
+        .button-link,
+        .footer__social a {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .footer__social a {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    }
